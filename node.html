@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>Item1</li>
+      <li>Item2</li>
+      <li>Item3</li>
+    </ul>
+    <script>
+      let htmlCollection = document.getElementsByTagName("li");
+      let nodeList = document.querySelectorAll("li");
+
+      let ulContainer = document.querySelectorAll("ul");
+      let liNew = document.createElement("li");
+      liNew.innerHTML = "item baru";
+      ulContainer.appendChild(liNew);
+      console.log(htmlCollection);
+      console.log(nodeList);
+    </script>
+  </body>
+</html>
